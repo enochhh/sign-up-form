@@ -8,29 +8,78 @@
     font-size: 62.5%;
 }
 
+body {
+    display: flex;
+}
+
 .sidebar {
-    position:relative;
     text-align: center;
-    /* display:flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh; 
-    width: 40vw;
+    width: 35vw;
     background: no-repeat url("img/bread.jpg");
     background-size:cover;
     background-position: 40% 70%;
 }
 
-/* #centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
 .logo {
+    width: 35vw;
     font-size: 7vw;
-    color:pink;
-    background-color:orange;
-    width:100%;
+    color:rgb(245, 181, 129);
 }
+
+.logo-bar {
+    width:35vw;
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
+.intro {
+    height: 30vh;
+    width: 100%;
+    background-color: gray;
+    font-size:2.5rem;
+    padding: 3rem;
+}
+
+label, input {
+    display:flex;
+    flex-direction: column;
+}
+input {
+    border-radius:.4rem;
+}
+.form-intro {
+    padding: 2rem 5rem;
+    font-size:3rem;
+}
+
+.actual-form {
+    display:flex;
+    gap:5rem;
+    padding: 2rem 5rem;
+}
+
+.form-item {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+input {
+    height: 3rem;
+    width: 25rem;
+}
+
+.left-side, .right-side {
+    width:25vw;
+}
+
+/* .left-side {
+    background-color: brown;
+}
+
+.right-side {
+    background-color: blue;
+} */
